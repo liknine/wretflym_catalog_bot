@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "category_id": 1,
+    "brand": "bape",
+    "name": "Bape Tiger",
+    "description": "2007",
+    "price_byn": 1000.0,
+    "price_rub": 25000.0,
+    "price_usd": 333.0,
+    "old_price_byn": null,
+    "old_price_rub": null,
+    "old_price_usd": null,
+    "prices": {
+      "BYN": 1000.0,
+      "RUB": 25000.0,
+      "USD": 333.0
+    },
+    "sizes": [
+      "43",
+      "44"
+    ],
+    "stock": 5,
+    "images": [
+      "https://api.telegram.org/file/bot8704335513:AAFb3liiqAw-GhVcI1gkHEXLJJMH4214nQk/photos/file_0.jpg",
+      "https://api.telegram.org/file/bot8704335513:AAFb3liiqAw-GhVcI1gkHEXLJJMH4214nQk/photos/file_1.jpg"
+    ]
+  },
+  {
+    "id": 2,
+    "category_id": 1,
+    "brand": "balenciaga",
+    "name": "Balenciaga Runner 2",
+    "description": "new runner",
+    "price_byn": 1200.0,
+    "price_rub": 27500.0,
+    "price_usd": 420.0,
+    "old_price_byn": null,
+    "old_price_rub": null,
+    "old_price_usd": null,
+    "prices": {
+      "BYN": 1200.0,
+      "RUB": 27500.0,
+      "USD": 420.0
+    },
+    "sizes": [
+      "43",
+      "44"
+    ],
+    "stock": 5,
+    "images": [
+      "https://api.telegram.org/file/bot8704335513:AAFb3liiqAw-GhVcI1gkHEXLJJMH4214nQk/photos/file_2.jpg",
+      "https://api.telegram.org/file/bot8704335513:AAFb3liiqAw-GhVcI1gkHEXLJJMH4214nQk/photos/file_3.jpg"
+    ]
+  }
+]
