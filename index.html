@@ -565,37 +565,76 @@ function openCheckout(){if(!cart.length)return;buildDeliveryList();setDelivery('
 function closeCheckout(){document.getElementById('checkout-modal').classList.remove('open');}
 function closeCheckoutOverlay(e){if(e.target===document.getElementById('checkout-modal'))closeCheckout();}
 
-function submitOrder(){
-  const form=DELIVERY_FORMS[currentDelivery],data={};let valid=true;
-  form.fields.forEach(field=>{const fields=field.row||[field];fields.forEach(f=>{const el=document.getElementById('form-'+f.id);if(el){data[f.id]=el.value.trim();if(f.required&&!data[f.id])valid=false;}});});
-  if(!valid){showToast('Заполните все поля');return;}
-  const comment=document.getElementById('form-comment')?.value?.trim()||'';
-  const total=cart.reduce((s,i)=>s+getCartItemPrice(i),0);
+function submitOrder() {
+  const form = DELIVERY_FORMS[currentDelivery];
+  const data = {};
+  let valid = true;
 
-  const order={
-    items:cart.map(i=>({id:i.id,name:i.name,brand:i.brand,sizes:[i.size],price:getCartItemPrice(i),image:i.image})),
-    total,currency:currentCurrency,deliveryType:currentDelivery,
-    deliveryService:DELIVERY_FORMS[currentDelivery]?.label||currentDelivery,
-    deliveryData:data,customer:{firstName:data.firstname||'',lastName:data.lastname||'',patronymic:data.patronymic||'',phone:data.phone||''},comment
-  };
+  form.fields.forEach(field => {
+    const fields = field.row || [field];
+    fields.forEach(f => {
+      const el = document.getElementById(`form-${f.id}`);
+      if (el) {
+        data[f.id] = el.value.trim();
+        if (f.required && !data[f.id]) valid = false;
+      }
+    });
+  });
 
-  if(window.Telegram?.WebApp?.sendData){
-    try{
-      window.Telegram.WebApp.sendData(JSON.stringify(order));
-      cart=[];saveCart();updateBadges();renderCart();closeCheckout();showToast('Заказ оформлен');
-      setTimeout(()=>{if(window.Telegram?.WebApp?.openTelegramLink)window.Telegram.WebApp.openTelegramLink('https://t.me/'+MANAGER);else window.open('https://t.me/'+MANAGER,'_blank');},600);
-    }catch(e){showToast('Ошибка отправки');}
-  }else{
-    let text='Новый заказ\n\n';
-    cart.forEach(i=>{text+=i.name+'\nРазмер: '+i.size+'\nЦена: '+fmt(getCartItemPrice(i))+'\n';if(i.image)text+='Фото: '+i.image+'\n';text+='\n';});
-    text+='Итого: '+fmt(total)+'\nДоставка: '+(DELIVERY_FORMS[currentDelivery]?.label||currentDelivery)+'\n\nДанные:\n';
-    Object.entries(data).forEach(([k,v])=>{if(v)text+=k+': '+v+'\n';});
-    if(comment)text+='\nКомментарий: '+comment;
-    const encoded=encodeURIComponent(text);
-    if(window.Telegram?.WebApp?.openTelegramLink)window.Telegram.WebApp.openTelegramLink('https://t.me/'+MANAGER+'?text='+encoded);
-    else window.open('https://t.me/'+MANAGER+'?text='+encoded,'_blank');
-    cart=[];saveCart();updateBadges();renderCart();closeCheckout();showToast('Перенаправляем к менеджеру...');
+  if (!valid) {
+    showToast('Заполните все поля');
+    return;
   }
+
+  const comment = document.getElementById('form-comment')?.value?.trim() || '';
+  const total = cart.reduce((s, i) => s + getCartItemPrice(i), 0);
+
+  let text = `Новый заказ\n\n`;
+
+  cart.forEach((item, index) => {
+    text += `${index + 1}. ${item.name}\n`;
+    text += `Размер: ${item.size}\n`;
+    text += `Цена: ${fmt(getCartItemPrice(item))}\n`;
+    if (item.image) {
+      text += `Фото: ${item.image}\n`;
+    }
+    text += `\n`;
+  });
+
+  text += `Итого: ${fmt(total)}\n`;
+  text += `Доставка: ${DELIVERY_FORMS[currentDelivery]?.label || currentDelivery}\n\n`;
+  text += `Данные клиента:\n`;
+
+  if (data.firstname) text += `Имя: ${data.firstname}\n`;
+  if (data.lastname) text += `Фамилия: ${data.lastname}\n`;
+  if (data.patronymic) text += `Отчество: ${data.patronymic}\n`;
+  if (data.phone) text += `Телефон: ${data.phone}\n`;
+  if (data.city) text += `Город: ${data.city}\n`;
+  if (data.address) text += `Адрес: ${data.address}\n`;
+  if (data.zipcode) text += `Индекс: ${data.zipcode}\n`;
+  if (data.branch) text += `Отделение: ${data.branch}\n`;
+  if (data.country) text += `Страна: ${data.country}\n`;
+  if (data.pvz) text += `Пункт выдачи: ${data.pvz}\n`;
+
+  if (comment) {
+    text += `\nКомментарий: ${comment}`;
+  }
+
+  const encodedText = encodeURIComponent(text);
+
+  // Сразу перекидываем в ЛС менеджера с готовым текстом
+  if (window.Telegram && window.Telegram.WebApp && window.Telegram.WebApp.openTelegramLink) {
+    window.Telegram.WebApp.openTelegramLink(`https://t.me/${MANAGER}?text=${encodedText}`);
+  } else {
+    window.open(`https://t.me/${MANAGER}?text=${encodedText}`, '_blank');
+  }
+
+  cart = [];
+  saveCart();
+  updateBadges();
+  renderCart();
+  closeCheckout();
+  showToast('Перенаправляем к менеджеру...');
 }
 
 function switchTab(tab){
