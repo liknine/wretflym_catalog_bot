@@ -54,33 +54,6 @@
     ]
   },
   {
-    "id": 3,
-    "category_id": 1,
-    "brand": "balenciaga",
-    "name": "Balenciaga Track 1 red",
-    "description": "reddd",
-    "price_byn": 900.0,
-    "price_rub": 23000.0,
-    "price_usd": 300.0,
-    "old_price_byn": null,
-    "old_price_rub": null,
-    "old_price_usd": null,
-    "prices": {
-      "BYN": 900.0,
-      "RUB": 23000.0,
-      "USD": 300.0
-    },
-    "sizes": [
-      "42",
-      "44"
-    ],
-    "stock": 5,
-    "images": [
-      "https://api.telegram.org/file/bot8704335513:AAFb3liiqAw-GhVcI1gkHEXLJJMH4214nQk/photos/file_4.jpg",
-      "https://api.telegram.org/file/bot8704335513:AAFb3liiqAw-GhVcI1gkHEXLJJMH4214nQk/photos/file_5.jpg"
-    ]
-  },
-  {
     "id": 4,
     "category_id": 10,
     "brand": "raf_simons",
