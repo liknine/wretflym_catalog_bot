@@ -79,5 +79,30 @@
       "https://api.telegram.org/file/bot8704335513:AAFb3liiqAw-GhVcI1gkHEXLJJMH4214nQk/photos/file_4.jpg",
       "https://api.telegram.org/file/bot8704335513:AAFb3liiqAw-GhVcI1gkHEXLJJMH4214nQk/photos/file_5.jpg"
     ]
+  },
+  {
+    "id": 4,
+    "category_id": 10,
+    "brand": "raf_simons",
+    "name": "Hermes Bracelet",
+    "description": "new, no set",
+    "price_byn": 75.0,
+    "price_rub": 2500.0,
+    "price_usd": 25.0,
+    "old_price_byn": null,
+    "old_price_rub": null,
+    "old_price_usd": null,
+    "prices": {
+      "BYN": 75.0,
+      "RUB": 2500.0,
+      "USD": 25.0
+    },
+    "sizes": [
+      "ONE SIZE"
+    ],
+    "stock": 5,
+    "images": [
+      "https://api.telegram.org/file/bot8704335513:AAFb3liiqAw-GhVcI1gkHEXLJJMH4214nQk/photos/file_6.jpg"
+    ]
   }
 ]
