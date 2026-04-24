@@ -2,78 +2,26 @@
   {
     "id": 1,
     "category_id": 1,
-    "brand": "bape",
-    "name": "Bape Tiger",
-    "description": "2007",
-    "price_byn": 1111.0,
-    "price_rub": 25000.0,
-    "price_usd": 333.0,
+    "brand": "nike",
+    "name": "1",
+    "description": "2",
+    "price_byn": 33.0,
+    "price_rub": 33.0,
+    "price_usd": 33.0,
     "old_price_byn": null,
     "old_price_rub": null,
     "old_price_usd": null,
     "prices": {
-      "BYN": 1000.0,
-      "RUB": 25000.0,
-      "USD": 333.0
+      "BYN": 33.0,
+      "RUB": 33.0,
+      "USD": 33.0
     },
     "sizes": [
-      "43",
       "44"
     ],
-    "stock": 5,
+    "stock": 2,
     "images": [
-      "https://liknine.github.io/wretflym_catalog_bot/images/product_1_18722754.jpg"
-    ]
-  },
-  {
-    "id": 2,
-    "category_id": 1,
-    "brand": "balenciaga",
-    "name": "Balenciaga Runner 2",
-    "description": "new runner",
-    "price_byn": 1200.0,
-    "price_rub": 27500.0,
-    "price_usd": 420.0,
-    "old_price_byn": null,
-    "old_price_rub": null,
-    "old_price_usd": null,
-    "prices": {
-      "BYN": 1200.0,
-      "RUB": 27500.0,
-      "USD": 420.0
-    },
-    "sizes": [
-      "43",
-      "44"
-    ],
-    "stock": 5,
-    "images": [
-      "https://liknine.github.io/wretflym_catalog_bot/images/product_2_86ac8ab2.jpg"
-    ]
-  },
-  {
-    "id": 4,
-    "category_id": 10,
-    "brand": "raf_simons",
-    "name": "Hermes Bracelet",
-    "description": "new, no set",
-    "price_byn": 75.0,
-    "price_rub": 2500.0,
-    "price_usd": 25.0,
-    "old_price_byn": null,
-    "old_price_rub": null,
-    "old_price_usd": null,
-    "prices": {
-      "BYN": 75.0,
-      "RUB": 2500.0,
-      "USD": 25.0
-    },
-    "sizes": [
-      "ONE SIZE"
-    ],
-    "stock": 5,
-    "images": [
-      "https://api.telegram.org/file/bot8704335513:AAFb3liiqAw-GhVcI1gkHEXLJJMH4214nQk/photos/file_6.jpg"
+      "https://api.telegram.org/file/bot8704335513:AAFb3liiqAw-GhVcI1gkHEXLJJMH4214nQk/photos/file_9.jpg"
     ]
   }
 ]
