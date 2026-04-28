@@ -1,1 +1,27 @@
-[]
+[
+  {
+    "id": 1,
+    "category_id": 2,
+    "brand": "no_name",
+    "name": "Armani puffer",
+    "description": "Пуховик находится в около идеальном состоянии без следов носки,подходит для всех сезонов погоды",
+    "price_byn": 600.0,
+    "price_rub": 16200.0,
+    "price_usd": 220.0,
+    "old_price_byn": null,
+    "old_price_rub": null,
+    "old_price_usd": null,
+    "prices": {
+      "BYN": 600.0,
+      "RUB": 16200.0,
+      "USD": 220.0
+    },
+    "sizes": [
+      "S"
+    ],
+    "stock": 1,
+    "images": [
+      "https://api.telegram.org/file/bot8704335513:AAFb3liiqAw-GhVcI1gkHEXLJJMH4214nQk/photos/file_11.jpg"
+    ]
+  }
+]
