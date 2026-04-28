@@ -23,5 +23,30 @@
     "images": [
       "https://api.telegram.org/file/bot8704335513:AAFb3liiqAw-GhVcI1gkHEXLJJMH4214nQk/photos/file_11.jpg"
     ]
+  },
+  {
+    "id": 2,
+    "category_id": 1,
+    "brand": "louis_vuitton",
+    "name": "Louis Vuitton denim trainer sneakres",
+    "description": "Louis Vuitton denim trainer\n-пара с личной полки,крайне удобная,единственная в снг в 43размере,код под язычком подтверждает аутентичность пары\n \nCond:9/10\n\nSize:43EU\n\nPrice:640$(1800BYN)\n\n@wretflym\n\n#наличие",
+    "price_byn": 1800.0,
+    "price_rub": 48000.0,
+    "price_usd": 660.0,
+    "old_price_byn": null,
+    "old_price_rub": null,
+    "old_price_usd": null,
+    "prices": {
+      "BYN": 1800.0,
+      "RUB": 48000.0,
+      "USD": 660.0
+    },
+    "sizes": [
+      "42"
+    ],
+    "stock": 1,
+    "images": [
+      "https://api.telegram.org/file/bot8704335513:AAFb3liiqAw-GhVcI1gkHEXLJJMH4214nQk/photos/file_12.jpg"
+    ]
   }
 ]
