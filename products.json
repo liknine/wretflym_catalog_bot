@@ -48,5 +48,31 @@
     "images": [
       "https://api.telegram.org/file/bot8704335513:AAFb3liiqAw-GhVcI1gkHEXLJJMH4214nQk/photos/file_12.jpg"
     ]
+  },
+  {
+    "id": 3,
+    "category_id": 2,
+    "brand": "louis_vuitton",
+    "name": "Louis vuitton baggy “plusha” hoodie",
+    "description": "Louis vuitton baggy “plusha” hoodie\n\nCond:new\n\nSize:uneversal≈L\n\nPrice:dm\n\n@wretflym\n\n#наличие",
+    "price_byn": 2000.0,
+    "price_rub": 54000.0,
+    "price_usd": 700.0,
+    "old_price_byn": null,
+    "old_price_rub": null,
+    "old_price_usd": null,
+    "prices": {
+      "BYN": 2000.0,
+      "RUB": 54000.0,
+      "USD": 700.0
+    },
+    "sizes": [
+      "M"
+    ],
+    "stock": 1,
+    "images": [
+      "https://api.telegram.org/file/bot8704335513:AAFb3liiqAw-GhVcI1gkHEXLJJMH4214nQk/photos/file_13.jpg",
+      "https://api.telegram.org/file/bot8704335513:AAFb3liiqAw-GhVcI1gkHEXLJJMH4214nQk/photos/file_14.jpg"
+    ]
   }
 ]
