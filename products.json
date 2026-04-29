@@ -74,5 +74,32 @@
       "https://api.telegram.org/file/bot8704335513:AAFb3liiqAw-GhVcI1gkHEXLJJMH4214nQk/photos/file_13.jpg",
       "https://api.telegram.org/file/bot8704335513:AAFb3liiqAw-GhVcI1gkHEXLJJMH4214nQk/photos/file_14.jpg"
     ]
+  },
+  {
+    "id": 4,
+    "category_id": 6,
+    "brand": "louis_vuitton",
+    "name": "louis vuitton box zip hoodie",
+    "description": "louis vuitton box zip hoodie\n\nCond:9/10\n\nSize:L\n\nPrice:dm\n\n@wretflym\n\n#наличие",
+    "price_byn": 1200.0,
+    "price_rub": 32000.0,
+    "price_usd": 440.0,
+    "old_price_byn": null,
+    "old_price_rub": null,
+    "old_price_usd": null,
+    "prices": {
+      "BYN": 1200.0,
+      "RUB": 32000.0,
+      "USD": 440.0
+    },
+    "sizes": [
+      "L",
+      "M"
+    ],
+    "stock": 2,
+    "images": [
+      "https://api.telegram.org/file/bot8704335513:AAFb3liiqAw-GhVcI1gkHEXLJJMH4214nQk/photos/file_15.jpg",
+      "https://api.telegram.org/file/bot8704335513:AAFb3liiqAw-GhVcI1gkHEXLJJMH4214nQk/photos/file_16.jpg"
+    ]
   }
 ]
