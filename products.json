@@ -101,5 +101,31 @@
       "https://api.telegram.org/file/bot8704335513:AAFb3liiqAw-GhVcI1gkHEXLJJMH4214nQk/photos/file_15.jpg",
       "https://api.telegram.org/file/bot8704335513:AAFb3liiqAw-GhVcI1gkHEXLJJMH4214nQk/photos/file_16.jpg"
     ]
+  },
+  {
+    "id": 5,
+    "category_id": 1,
+    "brand": "louis_vuitton",
+    "name": "Louis Vuitton skate",
+    "description": "Крутая редкая пара,полностью оригинальная в идеале",
+    "price_byn": 1000.0,
+    "price_rub": 27000.0,
+    "price_usd": 355.0,
+    "old_price_byn": null,
+    "old_price_rub": null,
+    "old_price_usd": null,
+    "prices": {
+      "BYN": 1000.0,
+      "RUB": 27000.0,
+      "USD": 355.0
+    },
+    "sizes": [
+      "43"
+    ],
+    "stock": 1,
+    "images": [
+      "https://api.telegram.org/file/bot8704335513:AAFb3liiqAw-GhVcI1gkHEXLJJMH4214nQk/photos/file_17.jpg",
+      "https://api.telegram.org/file/bot8704335513:AAFb3liiqAw-GhVcI1gkHEXLJJMH4214nQk/photos/file_18.jpg"
+    ]
   }
 ]
