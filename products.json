@@ -127,5 +127,32 @@
       "https://api.telegram.org/file/bot8704335513:AAFb3liiqAw-GhVcI1gkHEXLJJMH4214nQk/photos/file_17.jpg",
       "https://api.telegram.org/file/bot8704335513:AAFb3liiqAw-GhVcI1gkHEXLJJMH4214nQk/photos/file_18.jpg"
     ]
+  },
+  {
+    "id": 6,
+    "category_id": 1,
+    "brand": "adidas",
+    "name": "test",
+    "description": "testt",
+    "price_byn": 1000.0,
+    "price_rub": 30000.0,
+    "price_usd": 500.0,
+    "old_price_byn": null,
+    "old_price_rub": null,
+    "old_price_usd": null,
+    "prices": {
+      "BYN": 1000.0,
+      "RUB": 30000.0,
+      "USD": 500.0
+    },
+    "sizes": [
+      "43",
+      "44",
+      "45"
+    ],
+    "stock": 3,
+    "images": [
+      "https://api.telegram.org/file/bot8704335513:AAFb3liiqAw-GhVcI1gkHEXLJJMH4214nQk/photos/file_19.jpg"
+    ]
   }
 ]
